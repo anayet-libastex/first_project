@@ -30,7 +30,7 @@ nav ul li a:not(.active):hover {
 }
 /*MAINTAIN DROPDOWN*/
 nav ul li ul {
-    /* display: none; */
+    display: none; 
     background-color: dodgerblue;
     position: absolute;
 }
@@ -46,6 +46,6 @@ nav ul li ul li a:hover {
     color: #000;
     background: #f1f1f1!important;
 }
-nav ul li.dropdown:hover nav ul li ul {
+nav ul li:hover ul{
     display: block;
 }
