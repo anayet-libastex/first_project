@@ -1,73 +1,50 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
+.icons ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;  
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 20px;
+.icons ul li {
+  float: left;
+  margin-right: 8px;
 }
-
-.gallery-image {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.2s;
+.icons ul li.last-child {
+  margin-right: 0px;
 }
-
-.gallery-image:hover {
-  transform: scale(1.05);
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-}
-
-.modal-content {
-  margin: auto;
+.icons ul li a {
+  background: url("img/sicons.png");
+  background-position: 0px 0px;
+  width: 84px;
+  height: 84px;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transition: 1s;
 }
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  cursor: pointer;
+.icons ul li:hover:nth-child(1) a{
+  background-position: 0px -84px;
 }
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+.icons ul li:nth-child(2) a {
+  background-position: -840px 0px;
 }
-
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+.icons ul li:hover:nth-child(2) a {
+  background-position: -840px -84px;
+}
+.icons ul li:nth-child(3) a {
+  background-position: -336px 0px;
+}
+.icons ul li:hover:nth-child(3) a {
+  background-position: -336px -84px;
+}
+.icons ul li:nth-child(4) a {
+  background-position: -672px 0px;
+}
+.icons ul li:hover:nth-child(4) a {
+  background-position: -672px -84px;
+}
+.icons ul li:nth-child(5) a {
+  background-position: -588px 0px;
+}
+.icons ul li:hover:nth-child(5) a {
+  background-position: -588px -84px;
 }
