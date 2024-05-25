@@ -8,16 +8,27 @@
 </head>
 <body>
 
-  <div class="icons">
-     <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-     </ul>
-  </div>
-  
+<div>
+ <form action="#">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="userfirstname" placeholder="Your name ..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="userlastname" placeholder="Your last name ..">
+    <label for="country">Country</label>
+    <select name="userselectcountry" id="country">
+       <option value="bangladesh">Bangladesh</option>
+       <option value="pakistan">Pakistan</option>
+       <option value="nepal">Nepal</option>
+       <option value="india">India</option>
+       <option value="australia">Australia</option>
+       <option value="palestine">Palestine</option>
+       <option value="iran">Iran</option>
+    </select>
+
+    <input type="submit" value="Submit" />
+ </form>
+</div>
+
 <script src="scripts.js"></script>
 
 </body>

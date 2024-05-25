@@ -1,50 +1,27 @@
-.icons ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;  
+input[type="text"],select{
+  width: 100%;
+  display: inline-block;
+  padding: 8px 10px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  outline: none;
 }
-
-.icons ul li {
-  float: left;
-  margin-right: 8px;
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  display: inline-block;
+  margin: 8px 0px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.icons ul li.last-child {
-  margin-right: 0px;
+input[type="submit"]:hover {
+  background: #45a049;
 }
-.icons ul li a {
-  background: url("img/sicons.png");
-  background-position: 0px 0px;
-  width: 84px;
-  height: 84px;
-  display: block;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  transition: 1s;
-}
-.icons ul li:hover:nth-child(1) a{
-  background-position: 0px -84px;
-}
-.icons ul li:nth-child(2) a {
-  background-position: -840px 0px;
-}
-.icons ul li:hover:nth-child(2) a {
-  background-position: -840px -84px;
-}
-.icons ul li:nth-child(3) a {
-  background-position: -336px 0px;
-}
-.icons ul li:hover:nth-child(3) a {
-  background-position: -336px -84px;
-}
-.icons ul li:nth-child(4) a {
-  background-position: -672px 0px;
-}
-.icons ul li:hover:nth-child(4) a {
-  background-position: -672px -84px;
-}
-.icons ul li:nth-child(5) a {
-  background-position: -588px 0px;
-}
-.icons ul li:hover:nth-child(5) a {
-  background-position: -588px -84px;
+div {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
 }
