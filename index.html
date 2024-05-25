@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Tutorial</title>
+    <title>Website Tutorial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li class="dropdown"><a href="#">Portfolio</a>
-               <ul>
-                  <li><a href="#">PROJECT WITH HTML & CSS</a></li>
-                  <li><a href="#">PROJECT WITH HTML,CSS & JAVASCIPT</a></li>
-                  <li><a href="#">PROJECT WITH CSS FRAMEWORK</a></li>
-                  <li><a href="#">PROJECT WITH JAVASCIPT FRAMEWORK</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+   
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1698925914153-f71396b5ca5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Image 1" class="gallery-image">
+    <img src="https://images.unsplash.com/photo-1604694176853-bdce25a5ae2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Image 2" class="gallery-image">
+    <img src="https://images.unsplash.com/photo-1716018517051-7076e372319b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Image 3" class="gallery-image">
+    <img src="https://images.unsplash.com/photo-1712215299372-502525fcb8bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D" alt="Image 4" class="gallery-image">
+</div>
 
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption"></div>
+</div>
+
+<script src="scripts.js"></script>
 
 </body>
 </html>
