@@ -1,27 +1,121 @@
-input[type="text"],select{
-  width: 100%;
-  display: inline-block;
-  padding: 8px 10px;
-  margin: 10px 0px;
+*{
+  font-family: arial;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
-  outline: none;
 }
-input[type="submit"] {
+
+.container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: calc(100% - 250px);
+   text-align: center;
+   
+}
+
+.container h1 {
+  font-size:5em;
+  margin-bottom: 30px;
+ 
+}
+.container h1 span:nth-child(1) {
+  color: #4285F4;
+}
+.container h1 span:nth-child(2) {
+  color: #EA4335;
+}
+.container h1 span:nth-child(3) {
+  color: #FBBC05;
+}
+.container h1 span:nth-child(4) {
+  color: #4285F4;
+}
+.container h1 span:nth-child(5) {
+  color: #34A853;
+}
+.container h1 span:nth-child(6) {
+  color: #EA4335;
+}
+.container input {
   width: 100%;
-  padding: 12px;
+  border-radius: 20px;
+  outline: none;
+  display: block;
+  padding: 10px 45px;
+  box-shadow: 2px 2px 5px #ccc,1px 1px 6px #ddd;
+  border: 2px solid transparent;
+}
+.container .btngroup {
+  border: 2px solid red;
+}
+.container ion-icon.sicon {
+  position: absolute;
+  color: #333;
+  top: 143px;
+  left: 20px;
+  font-size: 18px;
+}
+.container ion-icon.smic {
+  position: absolute;
+  color: #333;
+  top: 142px;
+  right: 55px;
+  font-size: 20px;
+  
+}
+.container ion-icon.cam {
+  position: absolute;
+  color: #333;
+  top: 142px;
+  right: 28px;
+  font-size: 20px; 
+}
+.header {
+  text-align: right;
+}
+
+.header a,span,img {
   display: inline-block;
-  margin: 8px 0px;
-  background: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 5px 5px;
+  vertical-align: top;
 }
-input[type="submit"]:hover {
-  background: #45a049;
+
+.header a {
+  text-decoration: none;
+  color: #333;
+  vertical-align: text-bottom;
 }
-div {
-  background: #f2f2f2;
-  padding: 20px;
-  border-radius: 5px;
+
+@media (max-width: 1600px) {
+  .container {
+     width: calc(100% - 900px)
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: calc(100% - 550px)
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: calc(80% - 190px)
+ }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - 100px)
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: calc(100% - 50px);
+  }
+  input[placeholder] {
+    font-size: 12px;
+  }
 }
