@@ -1,28 +1,40 @@
-:root {
-  --stroke: #999;
-  --stroke-width: 0.4;
+.container {
+   width: 100%;
+   height: 350px;
+   border: 1px solid red;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-content: center;
+} 
+.item {
+  
+   padding: 20px;
+   text-align: center;
+   margin: 5px;
 }
-.line {
-  stroke:var(--stroke);
-  stroke-width: var(--stroke-width)
+.one {
+   background: pink;
+   flex-grow: 0;
+   flex-shrink: 1;
 }
-svg {
-  border: 2px solid #999;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%)
+.two {
+   background: lightgray;
+   flex-grow: 0
 }
-.combine {
-  transform: rotate(30deg);
-  transform-origin: center;
-  stroke: blue;
-  stroke-dasharray: 2,1;
+.three {
+   background: cyan;
+   
 }
-.rotate{
-  transform: perspective(800px) translateZ(0px) rotateY(0deg);
-  transition: 1s;
+.four {
+   background: lightblue;
+
 }
-.rotate:hover {
-  transform: perspective(800px) translateZ(500px) rotateY(50deg) ;
+.five {
+   background: lightgreen;
+ 
 }
+.six {
+   background: wheat;
+}
+
