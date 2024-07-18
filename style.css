@@ -1,40 +1,122 @@
-.container {
-   width: 100%;
-   height: 350px;
-   border: 1px solid red;
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   align-content: center;
-} 
-.item {
-  
-   padding: 20px;
-   text-align: center;
-   margin: 5px;
+* {
+  padding: 0;
+  margin: 0;
 }
-.one {
-   background: pink;
-   flex-grow: 0;
-   flex-shrink: 1;
+body {
+  font-family: arial;
 }
-.two {
-   background: lightgray;
-   flex-grow: 0
-}
-.three {
-   background: cyan;
-   
-}
-.four {
-   background: lightblue;
-
-}
-.five {
-   background: lightgreen;
+.header {
+  background: #111;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0.4in 0.5in;
  
 }
-.six {
-   background: wheat;
+.header .logo {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.header .nav a {
+  display:inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0px 15px;
+  transition: color 0.4s;
+}
+.header .nav a:nth-child(1) {
+   color: red;
+}
+.header .nav a:not(:nth-child(1)):hover {
+  color: red
+}
+/*hero area*/
+.banner {
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.3in 0.5in 0in 0.5in;
+}
+.banner h2 {
+  margin-bottom: 20px;
+  font-size: 50pt
+}
+.banner p {
+  font-size: 20pt;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+.banner button{
+  display: block;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: orange;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
+/*Responsive Header and Hero Section*/
+@media screen and (max-width: 992px) {
+  .header .logo {
+/*     font-size: 23px   */
+  }
+  .header .nav a{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .banner h2 {
+    font-size: 40pt;
+  }
+  .banner p {
+    font-size: 18pt;
+  }
+  .banner button {
+    font-size: 18px;
+    padding: 18px 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+   justify-content: center; 
+    align-items: center;
+  }
+  .header .logo {
+    margin-bottom: 20px
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .header{
+     align-items: stretch;    
+  }
+  .header .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .nav a{
+     display: block;
+     padding: 14px
+  }
+  .header .logo {
+    text-align: center;
+  }
+}
